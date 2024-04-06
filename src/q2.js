@@ -9,15 +9,21 @@
     - Implement listPatient() function to print all patient's name stored in the array
 */
 
-
 // Task 1: Add code here
+const patients = [];
 
-function addPatient(patientName){
-    // Task 2: Add code here
+function addPatient(patientName) {
+  // Task 2: Add code here
+  patients.push(patientName);
 }
 
 // Task 3: Add code here
 
+const listPatient = () => {
+  console.log(patients);
+  // Or if 1 by 1
+  patients.map((patient) => console.log(patient));
+};
 
 addPatient("John");
 addPatient("Mary");

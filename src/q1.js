@@ -11,10 +11,18 @@
     - 9, 17
 */
 
-function swap(x, y){
-    // Task 1: Add code here
+function swap(x, y) {
+  // Task 1: Add code here
+  if (!isNaN(parseFloat(x)) && !isNaN(parseFloat(y))) {
+    [x, y] = [y, x];
+    return `x: ${x}, y: ${y}`;
+  } else {
+    return -1;
+  }
 }
 
 // Task 2: Add code here
+console.log(swap("Apple", 10));
+console.log(swap(9, 17));
 
 module.exports = swap;
